@@ -1,0 +1,32 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f9fa;
+  transition: background 0.3s, color 0.3s;
+}
+.converter-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background: #121212;
+  color: #f8f9fa;
+}
+
+body.dark-mode .converter-box {
+  background: #1e1e1e;
+  color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

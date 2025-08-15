@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temperature Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<button class="btn btn-secondary theme-toggle">🌙 Dark Mode</button>
+<div class="converter-box">
+  <form>
+    <h2 class="mb-4">🌡 Temperature Conversion</h2>
+        <input type="number" id="number" value="0" class="form-control mb-3 text-center">
+        <div class="d-flex flex-column align-items-center gap-2 mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="celsius-fahrenheit" name="units">
+        <label class="form-check-label" for="celsius-fahrenheit">
+          Celsius ➡️ Fahrenheit
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="fahrenheit-celsius" name="units">
+        <label class="form-check-label" for="fahrenheit-celsius">
+          Fahrenheit ➡️ Celsius
+        </label>
+      </div>
+    </div>
+        <button type="submit" id="convert" class="btn btn-primary w-100">Convert</button>
+        <p class="output mt-3">Select a unit :</p>
+  </form>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
